@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+
+/* NAVBAR */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #10251b;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    color: #d6a84f;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.6),
+            rgba(0,0,0,.6)
+        ),
+        linear-gradient(
+            135deg,
+            #254f38,
+            #111
+        );
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.subtitle {
+    color: #d6a84f;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    margin: 15px 0;
+}
+
+.hero p {
+    max-width: 550px;
+    line-height: 1.7;
+}
+
+.btn {
+    display: inline-block;
+
+    margin-top: 30px;
+    padding: 15px 25px;
+
+    background: #d6a84f;
+    color: #111;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+
+/* KEUNGGULAN */
+
+.keunggulan {
+    max-width: 1100px;
+    margin: -60px auto 80px;
+
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+    position: relative;
+}
+
+.keunggulan-card {
+    background: white;
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08);
+}
+
+.keunggulan-card span {
+    font-size: 40px;
+}
+
+.keunggulan-card h3 {
+    margin: 15px 0 10px;
+}
+
+
+/* SECTION */
+
+section {
+    scroll-margin-top: 80px;
+}
+
+.alat,
+.cara {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 80px 25px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title p {
+    color: #d6a84f;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    margin-top: 10px;
+}
+
+
+/* PRODUK */
+
+.produk-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.produk {
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.08);
+
+    transition: .3s;
+}
+
+.produk:hover {
+    transform: translateY(-8px);
+}
+
+.produk-icon {
+    height: 180px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 80px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #dfe9e3,
+            #b7cbbb
+        );
+}
+
+.produk-info {
+    padding: 25px;
+}
+
+.kategori {
+    font-size: 12px;
+    color: #888;
+    font-weight: bold;
+}
+
+.produk h3 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.produk p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.harga {
+    margin-top: 20px;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    color: #10251b;
+}
+
+.harga span {
+    font-size: 14px;
+    font-weight: normal;
+    color: #777;
+}
+
+.produk button,
+.modal button {
+    width: 100%;
+
+    margin-top: 20px;
+    padding: 13px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #10251b;
+    color: white;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.produk button:hover,
+.modal button:hover {
+    background: #d6a84f;
+    color: #111;
+}
+
+
+/* CARA BOOKING */
+
+.cara {
+    background: #10251b;
+    color: white;
+
+    max-width: none;
+    padding-left: max(25px, calc((100% - 1150px) / 2));
+    padding-right: max(25px, calc((100% - 1150px) / 2));
+}
+
+.steps {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.step {
+    text-align: center;
+}
+
+.step span {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    background: #d6a84f;
+    color: #111;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.step h3 {
+    margin: 20px 0 10px;
+}
+
+.step p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+
+/* KONTAK */
+
+.kontak {
+    text-align: center;
+
+    padding: 100px 25px;
+}
+
+.kontak h2 {
+    font-size: 40px;
+}
+
+.kontak p {
+    margin-top: 15px;
+}
+
+.whatsapp {
+    background: #25D366;
+    color: white;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #0b1710;
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+footer p {
+    margin-top: 10px;
+    color: #aaa;
+}
+
+
+/* MODAL */
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    z-index: 2000;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,.7);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+.modal-content {
+    background: white;
+
+    width: 100%;
+    max-width: 500px;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    position: relative;
+}
+
+.modal-content h2 {
+    margin-bottom: 10px;
+}
+
+#barangDipilih {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.close {
+    position: absolute;
+
+    right: 20px;
+    top: 15px;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+.modal label {
+    display: block;
+
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+.modal input {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ddd;
+    border-radius: 7px;
+}
+
+
+/* RESPONSIVE HP */
+
+@media (max-width: 800px) {
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .keunggulan {
+        grid-template-columns: 1fr;
+
+        margin: 30px 25px;
+    }
+
+    .produk-container {
+        grid-template-columns: 1fr;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+}

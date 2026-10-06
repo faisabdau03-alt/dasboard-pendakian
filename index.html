@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jelajah Rental - Sewa Alat Pendakian</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                🏔️ Jelajah Rental
+            </div>
+
+            <div class="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#alat">Alat</a>
+                <a href="#cara">Cara Booking</a>
+                <a href="#kontak">Kontak</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="subtitle">SEWA ALAT PENDAKIAN</p>
+
+            <h1>
+                Siap Temani<br>
+                Petualanganmu 🏔️
+            </h1>
+
+            <p>
+                Sewa perlengkapan pendakian berkualitas
+                dengan harga terjangkau.
+            </p>
+
+            <a href="#alat" class="btn">
+                Lihat Peralatan
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- KEUNGGULAN -->
+    <section class="keunggulan">
+
+        <div class="keunggulan-card">
+            <span>💰</span>
+            <h3>Harga Terjangkau</h3>
+            <p>Harga bersahabat untuk pendaki.</p>
+        </div>
+
+        <div class="keunggulan-card">
+            <span>🎒</span>
+            <h3>Peralatan Lengkap</h3>
+            <p>Berbagai kebutuhan pendakian tersedia.</p>
+        </div>
+
+        <div class="keunggulan-card">
+            <span>⭐</span>
+            <h3>Peralatan Berkualitas</h3>
+            <p>Peralatan dirawat dan siap digunakan.</p>
+        </div>
+
+    </section>
+
+
+    <!-- DAFTAR ALAT -->
+    <section id="alat" class="alat">
+
+        <div class="section-title">
+            <p>OUR EQUIPMENT</p>
+            <h2>Daftar Alat Pendakian</h2>
+        </div>
+
+
+        <div class="produk-container">
+
+            <!-- PRODUK 1 -->
+            <div class="produk">
+
+                <div class="produk-icon">
+                    ⛺
+                </div>
+
+                <div class="produk-info">
+
+                    <span class="kategori">
+                        TENDA
+                    </span>
+
+                    <h3>Tenda 4 Orang</h3>
+
+                    <p>
+                        Tenda nyaman untuk kegiatan
+                        camping dan pendakian.
+                    </p>
+
+                    <div class="harga">
+                        Rp45.000
+                        <span>/hari</span>
+                    </div>
+
+                    <button
+                        onclick="booking('Tenda 4 Orang', 45000)">
+                        Booking
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUK 2 -->
+            <div class="produk">
+
+                <div class="produk-icon">
+                    🎒
+                </div>
+
+                <div class="produk-info">
+
+                    <span class="kategori">
+                        CARRIER
+                    </span>
+
+                    <h3>Carrier 60L</h3>
+
+                    <p>
+                        Carrier nyaman untuk membawa
+                        perlengkapan pendakian.
+                    </p>
+
+                    <div class="harga">
+                        Rp25.000
+                        <span>/hari</span>
+                    </div>
+
+                    <button
+                        onclick="booking('Carrier 60L', 25000)">
+                        Booking
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUK 3 -->
+            <div class="produk">
+
+                <div class="produk-icon">
+                    🛏️
+                </div>
+
+                <div class="produk-info">
+
+                    <span class="kategori">
+                        TIDUR
+                    </span>
+
+                    <h3>Sleeping Bag</h3>
+
+                    <p>
+                        Sleeping bag hangat untuk
+                        menemani malam di gunung.
+                    </p>
+
+                    <div class="harga">
+                        Rp15.000
+                        <span>/hari</span>
+                    </div>
+
+                    <button
+                        onclick="booking('Sleeping Bag', 15000)">
+                        Booking
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUK 4 -->
+            <div class="produk">
+
+                <div class="produk-icon">
+                    🔥
+                </div>
+
+                <div class="produk-info">
+
+                    <span class="kategori">
+                        MASAK
+                    </span>
+
+                    <h3>Kompor Portable</h3>
+
+                    <p>
+                        Kompor portable untuk memasak
+                        saat camping.
+                    </p>
+
+                    <div class="harga">
+                        Rp15.000
+                        <span>/hari</span>
+                    </div>
+
+                    <button
+                        onclick="booking('Kompor Portable', 15000)">
+                        Booking
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUK 5 -->
+            <div class="produk">
+
+                <div class="produk-icon">
+                    🥾
+                </div>
+
+                <div class="produk-info">
+
+                    <span class="kategori">
+                        OUTDOOR
+                    </span>
+
+                    <h3>Trekking Pole</h3>
+
+                    <p>
+                        Membantu menjaga keseimbangan
+                        saat perjalanan.
+                    </p>
+
+                    <div class="harga">
+                        Rp15.000
+                        <span>/hari</span>
+                    </div>
+
+                    <button
+                        onclick="booking('Trekking Pole', 15000)">
+                        Booking
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUK 6 -->
+            <div class="produk">
+
+                <div class="produk-icon">
+                    🔦
+                </div>
+
+                <div class="produk-info">
+
+                    <span class="kategori">
+                        PENERANGAN
+                    </span>
+
+                    <h3>Headlamp</h3>
+
+                    <p>
+                        Lampu kepala untuk aktivitas
+                        malam hari.
+                    </p>
+
+                    <div class="harga">
+                        Rp10.000
+                        <span>/hari</span>
+                    </div>
+
+                    <button
+                        onclick="booking('Headlamp', 10000)">
+                        Booking
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CARA BOOKING -->
+    <section id="cara" class="cara">
+
+        <div class="section-title">
+            <p>HOW TO BOOK</p>
+            <h2>Cara Booking</h2>
+        </div>
+
+        <div class="steps">
+
+            <div class="step">
+                <span>1</span>
+                <h3>Pilih Alat</h3>
+                <p>
+                    Pilih peralatan pendakian
+                    yang ingin kamu sewa.
+                </p>
+            </div>
+
+            <div class="step">
+                <span>2</span>
+                <h3>Isi Data</h3>
+                <p>
+                    Masukkan nama, nomor WhatsApp,
+                    dan tanggal sewa.
+                </p>
+            </div>
+
+            <div class="step">
+                <span>3</span>
+                <h3>Konfirmasi</h3>
+                <p>
+                    Pesanan akan dikirim melalui
+                    WhatsApp.
+                </p>
+            </div>
+
+            <div class="step">
+                <span>4</span>
+                <h3>Ambil Barang</h3>
+                <p>
+                    Datang ke tempat rental
+                    sesuai jadwal.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- KONTAK -->
+    <section id="kontak" class="kontak">
+
+        <h2>Siap Mendaki? 🏔️</h2>
+
+        <p>
+            Hubungi kami untuk melakukan booking
+            alat pendakian.
+        </p>
+
+        <a
+            href="https://wa.me/6281234567890"
+            target="_blank"
+            class="btn whatsapp">
+
+            💬 Chat WhatsApp
+
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>🏔️ Jelajah Rental</h3>
+
+        <p>
+            Sewa alat pendakian & camping
+        </p>
+
+        <p>
+            © 2026 Jelajah Rental
+        </p>
+
+    </footer>
+
+
+    <!-- MODAL BOOKING -->
+
+    <div id="bookingModal" class="modal">
+
+        <div class="modal-content">
+
+            <span
+                class="close"
+                onclick="tutupModal()">
+                &times;
+            </span>
+
+            <h2>Form Booking</h2>
+
+            <p id="barangDipilih"></p>
+
+            <form onsubmit="kirimWhatsApp(event)">
+
+                <label>Nama</label>
+
+                <input
+                    type="text"
+                    id="nama"
+                    placeholder="Nama lengkap"
+                    required>
+
+
+                <label>No. WhatsApp</label>
+
+                <input
+                    type="tel"
+                    id="nomor"
+                    placeholder="08xxxxxxxxxx"
+                    required>
+
+
+                <label>Tanggal Ambil</label>
+
+                <input
+                    type="date"
+                    id="tanggalAmbil"
+                    required>
+
+
+                <label>Tanggal Kembali</label>
+
+                <input
+                    type="date"
+                    id="tanggalKembali"
+                    required>
+
+
+                <label>Jumlah</label>
+
+                <input
+                    type="number"
+                    id="jumlah"
+                    value="1"
+                    min="1"
+                    required>
+
+
+                <button type="submit">
+                    💬 Booking via WhatsApp
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
